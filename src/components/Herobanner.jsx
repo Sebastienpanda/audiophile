@@ -1,4 +1,4 @@
-import casque from "../../public/assets/images/home/mobile/image-header.jpg";
+import casque from "@/assets/images/home/mobile/image-header.jpg";
 
 export function HeroBanner() {
   return (

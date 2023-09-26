@@ -70,11 +70,27 @@ export default {
             fontWeight: "700",
           },
         ],
+        shop: [
+          "0.8125rem",
+          {
+            lineHeight: "normal",
+            letterSpacing: "1px",
+            fontWeight: 700,
+          },
+        ],
+        "title-shop": [
+          "0.9375rem",
+          {
+            lineHeight: "normal",
+            letterSpacing: "1.071px",
+            fontWeight: "700",
+          },
+        ],
         overline: [
           "0.875rem",
           {
             lineHeight: "normal",
-            letterSpacing: "0.625rem",
+            letterSpacing: "10px",
             fontWeight: 400,
           },
         ],
