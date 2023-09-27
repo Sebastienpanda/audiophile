@@ -65,6 +65,7 @@
     background: url("../images/home/mobile/image-header.jpg") center/100%
       no-repeat;
     height: 583px;
+    width: 100%;
   }
   nav {
     transition: transform 350ms ease-in-out, visibility 350ms ease-in-out,

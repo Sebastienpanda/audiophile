@@ -81,9 +81,16 @@ export default {
         "title-shop": [
           "0.9375rem",
           {
+            lineHeight: "1.5625rem",
+            fontWeight: "500",
+          },
+        ],
+        "title-nav": [
+          "0.9375rem",
+          {
             lineHeight: "normal",
-            letterSpacing: "1.071px",
-            fontWeight: "700",
+            letterSpacing: "0.06694rem",
+            fontWeight: 700,
           },
         ],
         overline: [
