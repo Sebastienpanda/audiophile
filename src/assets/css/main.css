@@ -3,81 +3,85 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    font-family: "Manrope", sans-serif;
-  }
+    body {
+        font-family: "Manrope", sans-serif;
+    }
 }
 @layer components {
-  .btn {
-    @apply flex flex-col justify-center items-center w-[160px] h-[48px] uppercase;
-    padding: 0.94px 1.97px;
-  }
-  .btn-primary {
-    color: white;
-    background: #d87d4a;
-    transition: background 350ms ease-in-out;
-  }
-  .btn-primary:hover {
-    background: #fbaf85;
-  }
-  .btn-secondary {
-    color: #000;
-    border: 1px solid #000;
-    transition: background 350ms ease-in-out, color 350ms ease-in-out;
-  }
-  .btn-secondary:hover {
-    background: #000;
-    color: white;
-  }
+    .btn {
+        @apply flex h-[48px] w-[160px] flex-col items-center justify-center uppercase;
+        padding: 0.94px 1.97px;
+    }
+    .btn-primary {
+        color: white;
+        background: #d87d4a;
+        transition: background 350ms ease-in-out;
+    }
+    .btn-primary:hover {
+        background: #fbaf85;
+    }
+    .btn-secondary {
+        color: #000;
+        border: 1px solid #000;
+        transition:
+            background 350ms ease-in-out,
+            color 350ms ease-in-out;
+    }
+    .btn-secondary:hover {
+        background: #000;
+        color: white;
+    }
 
-  .cross {
-    @apply w-[16px];
-  }
-  .cross span {
-    @apply bg-white w-full h-[3px] block;
-    transition: background-color 350ms ease-in-out;
-  }
-  .cross span:before {
-    transform: translateY(-10px);
-  }
-  .cross span::after {
-    transform: translateY(10px);
-    margin-top: -3px;
-  }
-  .cross span::before,
-  .cross span::after {
-    content: "";
-    @apply w-full bg-white block h-[3px];
-    transition: transform 350ms ease-in-out;
-  }
-  .cross.active span {
-    @apply bg-transparent;
-  }
-  .cross.active span::before {
-    transform: rotateZ(45deg) translateY(0);
-  }
-  .cross.active span::after {
-    transform: rotateZ(-45deg) translateY(0);
-  }
+    .cross {
+        @apply w-[24px];
+    }
+    .cross span {
+        @apply block h-[3px] w-full bg-white;
+        transition: background-color 350ms ease-in-out;
+    }
+    .cross span:before {
+        transform: translateY(-10px);
+    }
+    .cross span::after {
+        transform: translateY(10px);
+        margin-top: -4px;
+    }
+    .cross span::before,
+    .cross span::after {
+        content: "";
+        @apply block h-[4px] w-full bg-white;
+        transition: transform 350ms ease-in-out;
+    }
+    .cross.active span {
+        @apply bg-transparent;
+    }
+    .cross.active span::before {
+        transform: rotateZ(45deg) translateY(0);
+    }
+    .cross.active span::after {
+        transform: rotateZ(-45deg) translateY(0);
+    }
 }
 @layer utilities {
-  .casque {
-    background: url("../images/home/mobile/image-header.jpg") center/100%
-      no-repeat;
-    height: 583px;
-    width: 100%;
-  }
-  .nav {
-    transition: transform 350ms ease-in-out, visibility 350ms ease-in-out,
-      height 350ms ease-in-out;
-    transform: translateX(-100%);
-    height: 0;
-  }
-  .nav-active {
-    height: 100vh;
-    transform: translateX(0%);
-  }
-  nav ul {
-    border-radius: 0px 0px 8px 8px;
-  }
+    .casque {
+        background: url("../images/home/mobile/image-header.jpg") center/100%
+            no-repeat;
+        height: 583px;
+        width: 100%;
+    }
+    .nav {
+        transition:
+            transform 350ms ease-in-out,
+            visibility 350ms ease-in-out,
+            height 350ms ease-in-out;
+        transform: translateX(-100%);
+        height: 0;
+    }
+    .nav-active {
+        height: 100vh;
+        transform: translateX(0%);
+    }
+    nav ul {
+        border-radius: 0px 0px 8px 8px;
+    }
 }
