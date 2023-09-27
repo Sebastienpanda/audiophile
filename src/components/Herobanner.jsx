@@ -1,11 +1,12 @@
 import casque from "@/assets/images/home/mobile/image-header.jpg";
 import casqueTablet from "@/assets/images/home/tablet/image-header.jpg";
+import casqueDesktop from "@/assets/images/home/desktop/image-hero.jpg";
 
 export function HeroBanner() {
   return (
     <>
-      <section className="mt-[108px] grid place-content-center md:mt-[126px]">
-        <div className="flex flex-col items-center justify-center text-center px-6 md:px-[195px]">
+      <section className="mt-[108px] grid place-content-center md:mt-[126px] lg:place-content-start lg:mt-[128px]">
+        <div className="flex flex-col items-center justify-center text-center px-6 md:px-[195px] lg:px-0 lg:text-left lg:items-start lg:w-[56%]">
           <span className="text-overline text-white/[0.4964]">NEW PRODUCT</span>
           <h1 className="text-h1-mobile text-white pt-4 md:text-h1 md:pt-[1.5rem] ">
             XX99 Mark II HeadphoneS
@@ -24,6 +25,7 @@ export function HeroBanner() {
               media="(min-width: 768px) and (max-width: 1024px)"
               srcSet={casqueTablet}
             />
+            <source media="(min-width: 1024px)" srcSet={casqueDesktop} />
             <img
               src={casque}
               alt="Casque"

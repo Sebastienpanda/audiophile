@@ -67,7 +67,7 @@
     height: 583px;
     width: 100%;
   }
-  nav {
+  .nav {
     transition: transform 350ms ease-in-out, visibility 350ms ease-in-out,
       height 350ms ease-in-out;
     transform: translateX(-100%);

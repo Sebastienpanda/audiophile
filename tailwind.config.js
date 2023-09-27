@@ -13,6 +13,9 @@ export default {
         black: "#000000",
         mobile: "#191919",
       },
+      screens: {
+        "1xl": "1440px",
+      },
       fontSize: {
         h1: [
           "3.5rem",
@@ -75,6 +78,14 @@ export default {
           {
             lineHeight: "normal",
             letterSpacing: "1px",
+            fontWeight: 700,
+          },
+        ],
+        "link-nav": [
+          "0.8125rem",
+          {
+            lineHeight: "1.5625rem",
+            letterSpacing: "0.125rem",
             fontWeight: 700,
           },
         ],

@@ -1,10 +1,12 @@
 import arrow from "@/assets/images/shared/desktop/icon-arrow-right.svg";
-import { articles } from "../assets/data/fakeArticle.js";
+import { articles } from "../../assets/data/fakeArticle.js";
 
-export function Navigation({ style }) {
+export function MenuBurger({ style }) {
   return (
     <>
-      <nav className={`fixed top-[90px] w-full bg-black/[.4] z-[1] ${style}`}>
+      <nav
+        className={`fixed top-[90px] w-full bg-black/[.4] z-[1] ${style} nav`}
+      >
         <ul className="flex flex-col gap-[68px] bg-white px-6 pb-[35px] pt-[85px] md:flex-row md:justify-center md:gap-[10px] md:pb-[67px] md:pt-[108px] md:px-10">
           {articles.map((casque, index) => {
             return (
