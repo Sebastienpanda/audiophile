@@ -11,6 +11,7 @@
     .btn {
         @apply flex h-[48px] w-[160px] flex-col items-center justify-center uppercase;
         padding: 0.94px 1.97px;
+        text-transform: uppercase;
     }
     .btn-primary {
         color: white;
@@ -64,8 +65,7 @@
 }
 @layer utilities {
     .casque {
-        background: url("../images/home/mobile/image-header.jpg") center/100%
-            no-repeat;
+        background: url("../images/home/mobile/image-header.jpg") center/100% no-repeat;
         height: 583px;
         width: 100%;
     }
@@ -83,5 +83,25 @@
     }
     nav ul {
         border-radius: 0px 0px 8px 8px;
+    }
+    .pattern {
+        background-image: url(@/assets/images/home/desktop/pattern-circles.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 176%;
+        background-position-y: -7rem;
+    }
+    @media screen and (min-width: 768px) {
+        .pattern {
+            background-size: 129%;
+            background-position-y: -16rem;
+        }
+    }
+    @media screen and (min-width: 1440px) {
+        .pattern {
+            background-size: 79%;
+            background-position-y: -2rem;
+            background-position-x: -7rem;
+        }
     }
 }

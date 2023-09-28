@@ -7,6 +7,7 @@ export default {
                 tablet: "repeat(3, 1fr)",
                 laptop: "repeat(3, 1fr)",
                 "nav-center": "143px auto 143px",
+                "nav-center-mobile": "1fr 143px 1fr",
                 "center-element-left": "auto 1fr auto",
             },
             colors: {
@@ -18,6 +19,7 @@ export default {
                 white: "#FFFFFF",
                 black: "#000000",
                 mobile: "#191919",
+                "hover-btn": "#4C4C4C",
             },
             screens: {
                 "1xl": "1440px",
