@@ -29,7 +29,7 @@ export function Header() {
                     <div className="md:ml-[32px] lg:ml-0">
                         <img src={logo} alt="Logo de Audiophile" />
                     </div>
-                    <Navigation />
+                    <Navigation styleNav="hidden lg:block" styleUl="flex gap-[2.12rem]" />
                     <div className="flex w-full justify-end">
                         <img src={iconCart} alt="Panier" />
                     </div>

@@ -1,8 +1,8 @@
-export function Navigation({ style }) {
+export function Navigation({ styleNav, styleUl }) {
     return (
         <>
-            <nav className={`hidden lg:block ${style}`}>
-                <ul className={`flex gap-[2.12rem] text-link-nav uppercase text-white ${style}`}>
+            <nav className={` ${styleNav}`}>
+                <ul className={`text-link-nav uppercase text-white ${styleUl}`}>
                     <li className="transition-colors duration-[350ms] ease-in-out hover:text-primary">
                         <a href="">home</a>
                     </li>

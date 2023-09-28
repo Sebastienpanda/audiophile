@@ -1,4 +1,5 @@
 import logo from "@/assets/images/shared/desktop/logo.svg"
+import { Navigation } from "../Header/Navigation.jsx"
 
 export function Footer() {
     return (
@@ -8,22 +9,10 @@ export function Footer() {
                     <div className="mt-[52px] md:mt-[60px] lg:mt-0">
                         <img src={logo} alt="Audiophile" />
                     </div>
-                    <nav className="pt-[48px] text-center md:pt-8 lg:pt-0">
-                        <ul className="flex flex-col gap-4 text-link-nav uppercase text-white md:flex-row md:gap-[34px] md:text-left">
-                            <li className="transition-colors duration-[350ms] ease-in-out hover:text-primary">
-                                <a href="">home</a>
-                            </li>
-                            <li className="transition-colors duration-[350ms] ease-in-out hover:text-primary">
-                                <a href="">headphones</a>
-                            </li>
-                            <li className="transition-colors duration-[350ms] ease-in-out hover:text-primary">
-                                <a href="">speakers</a>
-                            </li>
-                            <li className="transition-colors duration-[350ms] ease-in-out hover:text-primary">
-                                <a href="">earphones</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <Navigation
+                        styleNav="pt-[48px] text-center md:pt-8 lg:pt-0"
+                        styleUl="flex flex-col gap-4 text-link-nav uppercase text-white md:flex-row md:gap-[34px] md:text-left"
+                    />
                 </div>
 
                 <p className="text-center text-title-shop text-white/50 md:text-left lg:w-[49%] lg:pt-[36px]">

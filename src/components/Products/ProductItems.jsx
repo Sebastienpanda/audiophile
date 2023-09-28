@@ -72,7 +72,12 @@ export function ProductItems() {
                                     srcSet={imageearphonesyx1Tablet}
                                     type="image/jpeg"
                                 />
-                                <img src={imageearphonesyx1} alt="image-speaker-zx9" loading="lazy" />
+                                <img
+                                    className="w-full"
+                                    src={imageearphonesyx1}
+                                    alt="image-speaker-zx9"
+                                    loading="lazy"
+                                />
                             </picture>
                         </div>
                         <div className="flex flex-col gap-8 rounded-lg bg-card  py-[41px] pl-6 md:w-1/2 md:justify-center md:py-0 md:pl-[41px] lg:pl-[95px]">
