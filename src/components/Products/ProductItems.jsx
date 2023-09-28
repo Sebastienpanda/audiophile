@@ -13,9 +13,9 @@ export function ProductItems() {
     return (
         <>
             <section>
-                <div className="mt-[120px] flex flex-col gap-6 md:mt-[96px] md:gap-8 1xl:mt-[168px] 1xl:gap-[48px]">
-                    <div className="pattern flex flex-col items-center gap-8 rounded-lg bg-primary px-6 py-[55px] md:px-[171px] xl:overflow-hidden 1xl:relative 1xl:h-[560px] 1xl:flex-row 1xl:justify-end 1xl:pr-[91px]">
-                        <picture className="block w-[172px] md:w-[197px] 1xl:absolute 1xl:bottom-[-19px] 1xl:left-[117px] 1xl:w-[410px]">
+                <div className="mt-[120px] flex flex-col gap-6 md:mt-[96px] md:gap-8 lg:mt-[168px] lg:gap-[48px]">
+                    <div className="pattern flex flex-col items-center gap-8 rounded-lg bg-primary px-6 py-[55px] md:px-[171px] lg:relative lg:h-[560px] lg:flex-row lg:justify-end lg:overflow-hidden lg:pr-[91px]">
+                        <picture className="block w-[172px] md:w-[197px] lg:absolute lg:bottom-[-19px] lg:left-[117px] lg:w-[410px]">
                             <source media="(min-width: 1024px)" srcSet={imageSpeakerDesktop} type="image/png" />
                             <source
                                 media="(min-width: 768px) and (max-width: 1024px)"
@@ -24,8 +24,8 @@ export function ProductItems() {
                             />
                             <img className="w-full" src={imageSpeaker} alt="image-speaker-zx9" loading="lazy" />
                         </picture>
-                        <div className="text-center text-white md:flex md:flex-col md:gap-8 1xl:w-[40%] 1xl:gap-0 1xl:text-left">
-                            <div className="flex flex-col gap-6 md:gap-8 1xl:gap-6">
+                        <div className="text-center text-white md:flex md:flex-col md:gap-8 lg:w-[40%] lg:gap-0 lg:text-left">
+                            <div className="flex flex-col gap-6 md:gap-8 lg:gap-6">
                                 <h2 className="text-h1-mobile uppercase md:text-h1">zx9 speaker</h2>
                                 <p
                                     className="text-title-shop text-white/75
@@ -36,7 +36,7 @@ export function ProductItems() {
                                 </p>
                             </div>
 
-                            <div className="flex justify-center pt-10 md:pt-0 1xl:justify-start 1xl:pt-10">
+                            <div className="flex justify-center pt-10 md:pt-0 lg:justify-start lg:pt-10">
                                 <Button content="see product" style="bg-black hover:bg-hover-btn" />
                             </div>
                         </div>
@@ -51,7 +51,7 @@ export function ProductItems() {
                             />
                             <img className="w-full" src={imagespeakerzx7} alt="image-speaker-zx9" loading="lazy" />
                         </picture>
-                        <div className="absolute left-6 top-1/2 flex -translate-y-1/2 flex-col gap-8 1xl:left-[95px]">
+                        <div className="absolute left-6 top-1/2 flex -translate-y-1/2 flex-col gap-8 lg:left-[95px]">
                             <h2 className="text-h4 uppercase">zx7 speaker</h2>
                             <Button
                                 content="see product"
@@ -59,7 +59,7 @@ export function ProductItems() {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-col gap-6 md:flex-row md:gap-[11px] 1xl:gap-[30px]">
+                    <div className="flex flex-col gap-6 md:flex-row md:gap-[11px] lg:gap-[30px]">
                         <div className="overflow-hidden rounded-lg md:w-1/2">
                             <picture>
                                 <source
@@ -75,7 +75,7 @@ export function ProductItems() {
                                 <img src={imageearphonesyx1} alt="image-speaker-zx9" loading="lazy" />
                             </picture>
                         </div>
-                        <div className="flex flex-col gap-8 rounded-lg bg-card  py-[41px] pl-6 md:w-1/2 md:justify-center md:py-0 md:pl-[41px] 1xl:pl-[95px]">
+                        <div className="flex flex-col gap-8 rounded-lg bg-card  py-[41px] pl-6 md:w-1/2 md:justify-center md:py-0 md:pl-[41px] lg:pl-[95px]">
                             <h2 className="text-h4 uppercase">yx1 earphones</h2>
                             <Button
                                 content="see product"

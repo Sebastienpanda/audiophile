@@ -85,4 +85,15 @@
             background-position-x: -7rem;
         }
     }
+    footer {
+        position: relative;
+    }
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 101px;
+        height: 4px;
+        background-color: #d87d4a;
+    }
 }
