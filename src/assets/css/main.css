@@ -13,25 +13,6 @@
         padding: 0.94px 1.97px;
         text-transform: uppercase;
     }
-    .btn-primary {
-        color: white;
-        background: #d87d4a;
-        transition: background 350ms ease-in-out;
-    }
-    .btn-primary:hover {
-        background: #fbaf85;
-    }
-    .btn-secondary {
-        color: #000;
-        border: 1px solid #000;
-        transition:
-            background 350ms ease-in-out,
-            color 350ms ease-in-out;
-    }
-    .btn-secondary:hover {
-        background: #000;
-        color: white;
-    }
 
     .cross {
         @apply w-[24px];

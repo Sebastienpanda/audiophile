@@ -1,3 +1,4 @@
+import { AudioGear } from "./components/AudioGear.jsx"
 import { Header } from "./components/Header/Header.jsx"
 import { HeroBanner } from "./components/Herobanner.jsx"
 import { ProductItems } from "./components/Products/ProductItems.jsx"
@@ -11,6 +12,7 @@ function App() {
                 <HeroBanner />
                 <Products />
                 <ProductItems />
+                <AudioGear />
             </main>
         </>
     )
