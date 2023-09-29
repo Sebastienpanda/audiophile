@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx"
 import "./assets/css/main.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { HeadPhones } from "./pages/Headphones/Headphones.jsx"
+import { Speakers } from "./pages/Speakers/Speakers.jsx"
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     {
         path: "/headphones",
         element: <HeadPhones />,
+    },
+    {
+        path: "/speakers",
+        element: <Speakers />,
     },
 ])
 
