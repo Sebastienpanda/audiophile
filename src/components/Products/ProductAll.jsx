@@ -1,9 +1,9 @@
 import { products } from "@/assets/data/fakeProducts.js"
 import { ProductCard } from "./ProductCard.jsx"
 
-export function ProductAll({ styleNav, styleUl }) {
+export function ProductAll({ styleNav, styleUl, styleProduct }) {
     return (
-        <nav className={`${styleNav}`}>
+        <nav className={`${styleNav} ${styleProduct}`}>
             <ul
                 className={`md grid gap-[68px] md:grid-cols-tablet md:flex-row md:justify-center md:gap-[10px] ${styleUl}`}
             >

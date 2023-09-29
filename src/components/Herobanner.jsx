@@ -16,7 +16,7 @@ export function HeroBanner() {
                         Experience natural, lifelike audio and exceptional build quality made for the passionate music
                         enthusiast.
                     </p>
-                    <Button content="see product" style="bg-primary text-white hover:bg-hoverBtn mt-7 md:mt-[2.5rem]" />
+                    <Button content="see product" variant="primary" style="mt-7 md:mt-[2.5rem]" />
                 </div>
                 <div className="absolute left-0 top-0 z-[-1] h-[600px] w-full md:h-[729px]">
                     <picture>

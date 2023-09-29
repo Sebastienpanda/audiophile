@@ -1,10 +1,12 @@
 import logo from "@/assets/images/shared/desktop/logo.svg"
 import { Navigation } from "../Header/Navigation.jsx"
 
-export function Footer() {
+export function Footer({ styleProduct }) {
     return (
         <>
-            <footer className="mt-[120px] flex flex-col items-center gap-[48px] bg-footer px-6 md:items-start md:gap-8 md:px-10 lg:relative lg:gap-0 lg:px-[80px] 1xl:px-[165px]">
+            <footer
+                className={`mt-[120px] flex flex-col items-center gap-[48px] bg-footer px-6 md:items-start md:gap-8 md:px-10 lg:relative lg:gap-0 lg:px-[80px] 1xl:px-[165px] ${styleProduct}`}
+            >
                 <div className="lg:flex lg:w-full lg:justify-between lg:pt-[75px]">
                     <div className="mt-[52px] md:mt-[60px] lg:mt-0">
                         <img src={logo} alt="Audiophile" />
@@ -22,7 +24,7 @@ export function Footer() {
                 </p>
                 <div className="md:flex md:w-full md:justify-between md:pb-[46px] md:pt-[48px] lg:pt-[56px]">
                     <p className="text-title-shop text-white/50">Copyright 2021. All Rights Reserved</p>
-                    <div className="flex gap-4 pb-[38px] md:pb-0 lg:absolute lg:right-[165px] lg:top-[205px]">
+                    <div className="flex justify-center gap-4 pb-[38px] pt-[48px] md:pb-0 md:pt-0 lg:absolute lg:right-[165px] lg:top-[205px]">
                         <a
                             className="fill-white transition-colors duration-[350ms] ease-in-out hover:fill-primary"
                             href="#"

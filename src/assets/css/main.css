@@ -96,4 +96,7 @@
         height: 4px;
         background-color: #d87d4a;
     }
+    .containerProduct:nth-child(2) {
+        flex-direction: row-reverse;
+    }
 }

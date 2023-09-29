@@ -2,10 +2,10 @@ import imageGestGear from "@/assets/images/shared/mobile/image-best-gear.jpg"
 import imageGestGearTablet from "@/assets/images/shared/tablet/image-best-gear.jpg"
 import imageGestGearDesktop from "@/assets/images/shared/desktop/image-best-gear.jpg"
 
-export function AudioGear() {
+export function AudioGear({ styleProduct }) {
     return (
         <>
-            <section className="mt-[120px] md:mt-[96px]">
+            <section className={`mt-[120px] md:mt-[96px] ${styleProduct}`}>
                 <figure className="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between ">
                     <picture className="lg:w-[49%]">
                         <source media="(min-width: 1024px )" srcSet={imageGestGearDesktop} type="image/jpeg" />
