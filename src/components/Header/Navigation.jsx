@@ -11,10 +11,10 @@ export function Navigation({ styleNav, styleUl }) {
                     <Link to="/headphones">headphones</Link>
                 </li>
                 <li className="transition-colors duration-[350ms] ease-in-out hover:text-primary">
-                    <a href="">speakers</a>
+                    <Link to="/speakers">speakers</Link>
                 </li>
                 <li className="transition-colors duration-[350ms] ease-in-out hover:text-primary">
-                    <a href="">earphones</a>
+                    <Link to="/earphones">earphones</Link>
                 </li>
             </ul>
         </nav>
