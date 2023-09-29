@@ -9,11 +9,11 @@ function App() {
     return (
         <>
             <Header />
-            <main className="mx-6 md:mx-10 lg:mx-[80px] 1xl:mx-[165px]">
+            <main className="mx-6 md:mx-10 lg:mx-20 1xl:mx-[10.313rem]">
                 <HeroBanner />
                 <ProductAll
-                    styleNav="mt-[205px] md:mt-[316px] lg:mt-[358px]"
-                    styleUl="lg:grid-cols-laptop lg:gap-[30px]"
+                    styleNav="mt-[12.813rem] md:mt-[19.75rem] lg:mt-[22.375rem]"
+                    styleUl="lg:grid-cols-laptop lg:gap-[1.875rem]"
                 />
                 <ListProducts />
                 <AudioGear />

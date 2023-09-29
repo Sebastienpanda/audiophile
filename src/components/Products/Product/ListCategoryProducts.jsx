@@ -3,8 +3,8 @@ import { ProductItem } from "./ProductItem.jsx"
 
 export function ListCategoryProducts({ category }) {
     return (
-        <section className="mt-16 lg:mt-[160px]">
-            <div className="space-y-[120px] lg:space-y-[160px]">
+        <section className="mt-16 lg:mt-40">
+            <div className="space-y-[7.5rem] lg:space-y-40">
                 {items
                     .filter((item) => item.category === category)
                     .map((element, index) => (

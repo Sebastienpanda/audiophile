@@ -28,8 +28,8 @@ export default {
                 h1: [
                     "3.5rem",
                     {
-                        lineHeight: "58px",
-                        letterSpacing: "2px",
+                        lineHeight: "3.625rem",
+                        letterSpacing: "0.125rem",
                         fontWeight: "700",
                     },
                 ],
@@ -44,16 +44,16 @@ export default {
                 h2: [
                     "2.5rem",
                     {
-                        lineHeight: "44px",
-                        letterSpacing: "1.429px",
+                        lineHeight: "2.75rem",
+                        letterSpacing: "0.089rem",
                         fontWeight: "700",
                     },
                 ],
                 h3: [
                     "2rem",
                     {
-                        lineHeight: "36px",
-                        letterSpacing: "1.143px",
+                        lineHeight: "2.25rem",
+                        letterSpacing: "0.071rem",
                         fontWeight: "700",
                     },
                 ],
@@ -61,7 +61,7 @@ export default {
                     "1.75rem",
                     {
                         lineHeight: "normal",
-                        letterSpacing: "2px",
+                        letterSpacing: "0.125rem",
                         fontWeight: "700",
                     },
                 ],
@@ -69,7 +69,7 @@ export default {
                     "1.5rem",
                     {
                         lineHeight: "normal",
-                        letterSpacing: "1.714px",
+                        letterSpacing: "0.107rem",
                         fontWeight: "700",
                     },
                 ],
@@ -77,7 +77,7 @@ export default {
                     "1.125rem",
                     {
                         lineHeight: "normal",
-                        letterSpacing: "1.286px",
+                        letterSpacing: "0.08rem",
                         fontWeight: "700",
                     },
                 ],
@@ -85,7 +85,7 @@ export default {
                     "0.8125rem",
                     {
                         lineHeight: "normal",
-                        letterSpacing: "1px",
+                        letterSpacing: "0.063rem",
                         fontWeight: 700,
                     },
                 ],
@@ -116,22 +116,22 @@ export default {
                     "0.875rem",
                     {
                         lineHeight: "normal",
-                        letterSpacing: "10px",
+                        letterSpacing: "0.625rem",
                         fontWeight: 400,
                     },
                 ],
                 subTitle: [
                     "0.813rem",
                     {
-                        lineHeight: "25px",
-                        letterSpacing: "0.929px",
+                        lineHeight: "1.563rem",
+                        letterSpacing: "0.058rem",
                         fontWeight: 700,
                     },
                 ],
                 content: [
                     "0.938rem",
                     {
-                        lineHeight: "25px",
+                        lineHeight: "1.563rem",
                         fontWeight: 500,
                     },
                 ],

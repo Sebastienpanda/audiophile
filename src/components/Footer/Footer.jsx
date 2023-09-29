@@ -5,26 +5,26 @@ export function Footer({ styleProduct }) {
     return (
         <>
             <footer
-                className={`mt-[120px] flex flex-col items-center gap-[48px] bg-footer px-6 md:items-start md:gap-8 md:px-10 lg:relative lg:gap-0 lg:px-[80px] 1xl:px-[165px] ${styleProduct}`}
+                className={`mt-[7.5rem] flex flex-col items-center gap-12 bg-footer px-6 md:items-start md:gap-8 md:px-10 lg:relative lg:gap-0 lg:px-20 1xl:px-[10.313rem] ${styleProduct}`}
             >
-                <div className="lg:flex lg:w-full lg:justify-between lg:pt-[75px]">
-                    <div className="mt-[52px] md:mt-[60px] lg:mt-0">
+                <div className="lg:flex lg:w-full lg:justify-between lg:pt-[4.688rem]">
+                    <div className="mt-[3.25rem] md:mt-[3.75rem] lg:mt-0">
                         <img src={logo} alt="Audiophile" />
                     </div>
                     <Navigation
-                        styleNav="pt-[48px] text-center md:pt-8 lg:pt-0"
-                        styleUl="flex flex-col gap-4 text-link-nav uppercase text-white md:flex-row md:gap-[34px] md:text-left"
+                        styleNav="pt-12 text-center md:pt-8 lg:pt-0"
+                        styleUl="flex flex-col gap-4 text-link-nav uppercase text-white md:flex-row md:gap-[2.125rem] md:text-left"
                     />
                 </div>
 
-                <p className="text-center text-title-shop text-white/50 md:text-left lg:w-[49%] lg:pt-[36px]">
+                <p className="text-center text-title-shop text-white/50 md:text-left lg:w-[49%] lg:pt-9">
                     Audiophile is an all in one stop to fulfill your audio needs. We&apos;re a small team of music
                     lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come
                     and visit our demo facility - we’re open 7 days a week.
                 </p>
-                <div className="md:flex md:w-full md:justify-between md:pb-[46px] md:pt-[48px] lg:pt-[56px]">
+                <div className="md:flex md:w-full md:justify-between md:pb-[2.875rem] md:pt-12 lg:pt-14">
                     <p className="text-title-shop text-white/50">Copyright 2021. All Rights Reserved</p>
-                    <div className="flex justify-center gap-4 pb-[38px] pt-[48px] md:pb-0 md:pt-0 lg:absolute lg:right-[165px] lg:top-[205px]">
+                    <div className="flex justify-center gap-4 pb-[2.375rem] pt-12 md:pb-0 md:pt-0 lg:absolute lg:right-[10.313rem] lg:top-[12.813rem]">
                         <a
                             className="fill-white transition-colors duration-[350ms] ease-in-out hover:fill-primary"
                             href="#"

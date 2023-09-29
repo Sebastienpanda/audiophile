@@ -5,7 +5,7 @@ export function ProductAll({ styleNav, styleUl, styleProduct }) {
     return (
         <nav className={`${styleNav} ${styleProduct}`}>
             <ul
-                className={`md grid gap-[68px] md:grid-cols-tablet md:flex-row md:justify-center md:gap-[10px] ${styleUl}`}
+                className={`md grid gap-[4.25rem] md:grid-cols-tablet md:flex-row md:justify-center md:gap-2.5 ${styleUl}`}
             >
                 {products.map((product, index) => {
                     return (

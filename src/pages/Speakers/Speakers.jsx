@@ -10,12 +10,12 @@ export function Speakers() {
         <>
             <Header style="bg-black" />
             <PageProductTitle title="speakers" />
-            <main className="mx-6 md:mx-10 lg:mx-[80px] 1xl:mx-[165px]">
+            <main className="mx-6 md:mx-10 lg:mx-20 1xl:mx-[10.313rem]">
                 <ListCategoryProducts category="speakers" />
-                <ProductAll styleProduct="mt-[172px] md:mt-[172px] lg:mt-[240px]" />
-                <AudioGear styleProduct="md:mt-[120px] lg:mt-[160px]" />
+                <ProductAll styleProduct="mt-[10.75rem] md:mt-[10.75rem] lg:mt-60" />
+                <AudioGear styleProduct="md:mt-[7.5rem] lg:mt-40" />
             </main>
-            <Footer styleProduct="lg:mt-[160px]" />
+            <Footer styleProduct="lg:mt-40" />
         </>
     )
 }

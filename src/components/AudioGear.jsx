@@ -5,7 +5,7 @@ import imageGestGearDesktop from "@/assets/images/shared/desktop/image-best-gear
 export function AudioGear({ styleProduct }) {
     return (
         <>
-            <section className={`mt-[120px] md:mt-[96px] ${styleProduct}`}>
+            <section className={`mt-[7.5rem] md:mt-24 ${styleProduct}`}>
                 <figure className="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between ">
                     <picture className="lg:w-[49%]">
                         <source media="(min-width: 1024px )" srcSet={imageGestGearDesktop} type="image/jpeg" />
@@ -16,7 +16,7 @@ export function AudioGear({ styleProduct }) {
                         />
                         <img className="w-full rounded-lg" src={imageGestGear} alt="Audio Gear" loading="lazy" />
                     </picture>
-                    <figcaption className="mt-10 flex flex-col gap-8 text-center md:mt-[63px] md:px-[62px] lg:mt-0 lg:w-1/2 lg:pl-0 lg:pr-[102px] lg:text-left">
+                    <figcaption className="mt-10 flex flex-col gap-8 text-center md:mt-[3.938rem] md:px-[3.875rem] lg:mt-0 lg:w-1/2 lg:pl-0 lg:pr-[6.375rem] lg:text-left">
                         <h2 className="text-h4 uppercase md:text-h2">
                             Bringing you the <span className="text-primary">best</span> audio gear
                         </h2>

@@ -12,9 +12,9 @@ import { Button } from "../ui/Button.jsx"
 export function ListProducts() {
     return (
         <section>
-            <div className="mt-[120px] flex flex-col gap-6 md:mt-[96px] md:gap-8 lg:mt-[168px] lg:gap-[48px]">
-                <div className="pattern flex flex-col items-center gap-8 rounded-lg bg-primary px-6 py-[55px] md:px-[171px] lg:relative lg:h-[560px] lg:flex-row lg:justify-end lg:overflow-hidden lg:pr-[91px]">
-                    <picture className="block w-[172px] md:w-[197px] lg:absolute lg:bottom-[-19px] lg:left-[117px] lg:w-[410px]">
+            <div className="mt-[7.5rem] flex flex-col gap-6 md:mt-24 md:gap-8 lg:mt-[10.5rem] lg:gap-12">
+                <div className="pattern lg:h-[35rem ] flex flex-col items-center gap-8 rounded-lg bg-primary px-6 py-[3.438rem] md:px-[10.688rem] lg:relative lg:flex-row lg:justify-end lg:overflow-hidden lg:pr-[5.688rem]">
+                    <picture className="block w-[10.75rem] md:w-[12.313rem] lg:absolute lg:bottom-[-1.188rem] lg:left-[7.313rem] lg:w-[25.625rem]">
                         <source media="(min-width: 1024px)" srcSet={imageSpeakerDesktop} type="image/png" />
                         <source
                             media="(min-width: 768px) and (max-width: 1024px)"
@@ -55,7 +55,7 @@ export function ListProducts() {
                         />
                         <img className="w-full" src={imagespeakerzx7} alt="image-speaker-zx9" loading="lazy" />
                     </picture>
-                    <div className="absolute left-6 top-1/2 flex -translate-y-1/2 flex-col gap-8 lg:left-[95px]">
+                    <div className="absolute left-6 top-1/2 flex -translate-y-1/2 flex-col gap-8 lg:left-[5.938rem]">
                         <h2 className="text-h4 uppercase">zx7 speaker</h2>
                         <Button
                             content="see product"
@@ -63,7 +63,7 @@ export function ListProducts() {
                         />
                     </div>
                 </div>
-                <div className="flex flex-col gap-6 md:flex-row md:gap-[11px] lg:gap-[30px]">
+                <div className="flex flex-col gap-6 md:flex-row md:gap-[0.688rem] lg:gap-[1.875rem]">
                     <div className="overflow-hidden rounded-lg md:w-1/2">
                         <picture>
                             <source media="(min-width:1024px)" srcSet={imageearphonesyx1Desktop} type="image/jpeg" />
@@ -75,7 +75,7 @@ export function ListProducts() {
                             <img className="w-full" src={imageearphonesyx1} alt="image-speaker-zx9" loading="lazy" />
                         </picture>
                     </div>
-                    <div className="flex flex-col gap-8 rounded-lg bg-card  py-[41px] pl-6 md:w-1/2 md:justify-center md:py-0 md:pl-[41px] lg:pl-[95px]">
+                    <div className="flex flex-col gap-8 rounded-lg bg-card  py-[2.563rem] pl-6 md:w-1/2 md:justify-center md:py-0 md:pl-[2.563rem] lg:pl-[5.938rem]">
                         <h2 className="text-h4 uppercase">yx1 earphones</h2>
                         <Button
                             content="see product"
