@@ -1,15 +1,16 @@
-import { items } from "@/assets/data/fakeItems.js"
+import { useFetch } from "../../../hooks/useFetch.js"
 import { ProductItem } from "./ProductItem.jsx"
 
 export function ListCategoryProducts({ category }) {
+    const { data, loading } = useFetch("http://localhost:1337/api/headphones?populate=*")
     return (
         <section className="mt-16 lg:mt-40">
             <div className="space-y-[7.5rem] lg:space-y-40">
-                {items
-                    .filter((item) => item.category === category)
-                    .map((element, index) => (
-                        <ProductItem key={index} {...element} />
-                    ))}
+                {loading && <div>Chargement</div>}
+                {data &&
+                    data
+                        .filter((item) => item.attributes.category.data.attributes.category === category)
+                        .map((element) => <ProductItem key={element.id} {...element.attributes} />)}
             </div>
         </section>
     )
