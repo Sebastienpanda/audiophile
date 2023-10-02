@@ -1,23 +1,8 @@
 import { Link } from "react-router-dom"
 import { Submit } from "../../ui/Forms/Submit.jsx"
-import { useState } from "react"
+import { InputNumber } from "../../ui/Forms/InputNumber.jsx"
 
 export function SingleItem({ data }) {
-    const [number, setNumber] = useState(0)
-
-    const increment = (e) => {
-        e.preventDefault()
-        setNumber(number + 1)
-    }
-
-    const decrement = (e) => {
-        e.preventDefault()
-        setNumber(number - 1)
-    }
-    const handleChange = (e) => {
-        setNumber(e.target.value)
-    }
-
     return (
         <>
             <span className="block pt-4 text-title-shop text-black/50 md:pt-8 lg:pt-[4.94rem]">
@@ -60,34 +45,8 @@ export function SingleItem({ data }) {
 
                     <form className="flex gap-4  pt-[1.94rem] lg:pt-[2.94rem]">
                         <div className="h-12 w-[7.5rem]">
-                            <div className="flex h-full flex-row bg-card">
-                                <button
-                                    className="w-10 cursor-pointer rounded-l text-shop text-black/25
-                                     transition-colors duration-[350ms] ease-in-out hover:text-primary"
-                                    onClick={decrement}
-                                    disabled={number === 0}
-                                >
-                                    <span className="m-auto">−</span>
-                                </button>
-                                <input
-                                    type="number"
-                                    name="number"
-                                    id="number"
-                                    value={number}
-                                    onChange={handleChange}
-                                    className="w-10 bg-card text-center text-shop outline-none"
-                                    readOnly
-                                />
-                                <button
-                                    className="w-10 cursor-pointer text-shop text-black/25
-                                transition-colors duration-[350ms] ease-in-out hover:text-primary"
-                                    onClick={increment}
-                                >
-                                    <span className="m-auto">+</span>
-                                </button>
-                            </div>
+                            <InputNumber iconLeft="-" iconRight="+" value="0" />
                         </div>
-
                         <Submit content="Add to cart" />
                     </form>
                 </section>
