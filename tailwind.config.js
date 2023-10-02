@@ -53,7 +53,7 @@ export default {
                     "2rem",
                     {
                         lineHeight: "2.25rem",
-                        letterSpacing: "0.071rem",
+                        letterSpacing: "0.07144rem",
                         fontWeight: "700",
                     },
                 ],
@@ -61,7 +61,7 @@ export default {
                     "1.75rem",
                     {
                         lineHeight: "normal",
-                        letterSpacing: "0.125rem",
+                        letterSpacing: "0.0625rem",
                         fontWeight: "700",
                     },
                 ],
@@ -77,7 +77,7 @@ export default {
                     "1.125rem",
                     {
                         lineHeight: "normal",
-                        letterSpacing: "0.08rem",
+                        letterSpacing: "0.08038rem",
                         fontWeight: "700",
                     },
                 ],

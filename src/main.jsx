@@ -5,21 +5,28 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { HeadPhones } from "./pages/Headphones/Headphones.jsx"
 import { Speakers } from "./pages/Speakers/Speakers.jsx"
 import { Earphones } from "./pages/Earphones/Earphone.jsx"
-import { OneHeadphone } from "./pages/Headphones/OneHeadphone.jsx"
 import { NotFound } from "./pages/NotFound/NotFound.jsx"
+import { Single } from "./pages/Headphones/Single.jsx"
 
 const router = createBrowserRouter([
     {
+        path: "*",
+        element: <NotFound />,
+    },
+    {
         path: "/",
         element: <Home />,
+        errorElement: <NotFound />,
     },
     {
         path: "/headphones",
         element: <HeadPhones />,
+        errorElement: <NotFound />,
     },
     {
         path: "/headphones/:id",
-        element: <OneHeadphone />,
+        element: <Single />,
+        errorElement: <NotFound />,
     },
     {
         path: "/speakers",
@@ -28,10 +35,6 @@ const router = createBrowserRouter([
     {
         path: "/earphones",
         element: <Earphones />,
-    },
-    {
-        path: "*",
-        element: <NotFound />,
     },
 ])
 

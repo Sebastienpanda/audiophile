@@ -1,17 +1,28 @@
 import { useEffect, useState } from "react"
 
-export function useFetch(url, options = {}) {
+export function useFetch(url, options) {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState([])
     const [errors, setError] = useState(null)
 
     useEffect(() => {
-        fetch(url, {
-            ...options,
+        const abortController = new AbortController()
+        const signal = abortController.signal
+        let fetchOptions = {
+            signal,
             headers: {
                 Accept: "application/json; charset=UTF-8",
                 Authorization: `Bearer ${import.meta.env.VITE_TOKEN_STRAPI}`,
             },
+        }
+        if (options) {
+            fetchOptions = {
+                ...fetchOptions,
+                ...options,
+            }
+        }
+        fetch(url, {
+            ...fetchOptions,
         })
             .then((response) => {
                 if (response.ok) {
@@ -19,7 +30,6 @@ export function useFetch(url, options = {}) {
                 }
             })
             .then((data) => {
-                console.log(data)
                 setData(data.data)
             })
             .catch((e) => {
@@ -28,7 +38,10 @@ export function useFetch(url, options = {}) {
             .finally(() => {
                 setLoading(false)
             })
-    }, [])
+        return () => {
+            abortController.abort()
+        }
+    }, [url, options])
     return {
         data,
         loading,
