@@ -7,7 +7,7 @@ import imagespeakerzx7Desktop from "@/assets/images/home/desktop/image-speaker-z
 import imageearphonesyx1 from "@/assets/images/home/mobile/image-earphones-yx1.jpg"
 import imageearphonesyx1Tablet from "@/assets/images/home/tablet/image-earphones-yx1.jpg"
 import imageearphonesyx1Desktop from "@/assets/images/home/desktop/image-earphones-yx1.jpg"
-import { Button } from "../ui/Button.jsx"
+import { Button } from "../../../components/ui/Button.jsx"
 
 export function ListProducts() {
     return (

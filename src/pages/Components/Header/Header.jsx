@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import logo from "@/assets/images/shared/desktop/logo.svg"
 import iconCart from "@/assets/images/shared/desktop/icon-cart.svg"
 import { Navigation } from "./Navigation.jsx"
-import { MenuBurger } from "./MenuBurger.jsx"
+import { MenuMobile } from "./MenuMobile.jsx"
 import { Link } from "react-router-dom"
 
 export function Header({ style }) {
@@ -36,7 +36,7 @@ export function Header({ style }) {
                     <img src={iconCart} alt="Panier" />
                 </div>
             </div>
-            {active ? <MenuBurger style="visible nav-active lg:hidden" /> : <MenuBurger style="invisible" />}
+            {active ? <MenuMobile style="visible nav-active lg:hidden" /> : <MenuMobile style="invisible" />}
         </header>
     )
 }

@@ -1,9 +1,9 @@
-import { AudioGear } from "../components/AudioGear.jsx"
-import { Footer } from "../components/Footer/Footer.jsx"
-import { Header } from "../components/Header/Header.jsx"
-import { HeroBanner } from "../components/Herobanner.jsx"
-import { ProductAll } from "../components/Products/ProductAll.jsx"
-import { ListProducts } from "../components/Products/ListProducts.jsx"
+import { Footer } from "../Components/Footer/Footer.jsx"
+import { Header } from "../Components/Header/Header.jsx"
+import { HeroBanner } from "../Components/Header/Herobanner.jsx"
+import { ListProducts } from "../Components/Product/ListProducts.jsx"
+import { CategoryThumbnail } from "../Components/Product/CategoryThumbnail.jsx"
+import { AudioGear } from "../Components/utils/AudioGear.jsx"
 
 function App() {
     return (
@@ -11,7 +11,7 @@ function App() {
             <Header />
             <main className="mx-6 md:mx-10 lg:mx-20 1xl:mx-[10.313rem]">
                 <HeroBanner />
-                <ProductAll
+                <CategoryThumbnail
                     styleNav="mt-[12.813rem] md:mt-[19.75rem] lg:mt-[22.375rem]"
                     styleUl="lg:grid-cols-laptop lg:gap-[1.875rem]"
                 />

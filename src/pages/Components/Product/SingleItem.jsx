@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import { Submit } from "../../ui/Forms/Submit.jsx"
-import { InputNumber } from "../../ui/Forms/InputNumber.jsx"
+import { Submit } from "../../../components/ui/Forms/Submit.jsx"
+import { InputNumber } from "../../../components/ui/Forms/InputNumber.jsx"
 
 export function SingleItem({ data }) {
     return (

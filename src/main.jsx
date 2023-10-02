@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client"
-import Home from "./pages/Home.jsx"
+import Home from "./pages/Home/Home.jsx"
 import "./assets/css/main.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { HeadPhones } from "./pages/Headphones/Headphones.jsx"

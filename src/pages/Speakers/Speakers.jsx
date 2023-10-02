@@ -1,18 +1,18 @@
-import { AudioGear } from "../../components/AudioGear.jsx"
-import { Footer } from "../../components/Footer/Footer.jsx"
-import { Header } from "../../components/Header/Header.jsx"
-import { PageProductTitle } from "../../components/Header/PageTitleProduct.jsx"
-import { ListCategoryProducts } from "../../components/Products/Product/ListCategoryProducts.jsx"
-import { ProductAll } from "../../components/Products/ProductAll.jsx"
+import { Header } from "../Components/Header/Header.jsx"
+import { Footer } from "../Components/Footer/Footer.jsx"
+import { HeroBannerTitle } from "../Components/Header/HeroBannerTitle.jsx"
+import { CategoryThumbnail } from "../Components/Product/CategoryThumbnail.jsx"
+import { ListCategoryProducts } from "../Components/Product/ListCategoryProducts.jsx"
+import { AudioGear } from "../Components/utils/AudioGear.jsx"
 
 export function Speakers() {
     return (
         <>
             <Header style="bg-black" />
-            <PageProductTitle title="speakers" />
+            <HeroBannerTitle title="speakers" />
             <main className="mx-6 md:mx-10 lg:mx-20 1xl:mx-[10.313rem]">
-                <ListCategoryProducts category="speakers" />
-                <ProductAll styleProduct="mt-[10.75rem] md:mt-[10.75rem] lg:mt-60" />
+                <ListCategoryProducts category="earphones" />
+                <CategoryThumbnail styleProduct="mt-[10.75rem] md:mt-[10.75rem] lg:mt-60" />
                 <AudioGear styleProduct="md:mt-[7.5rem] lg:mt-40" />
             </main>
             <Footer styleProduct="lg:mt-40" />

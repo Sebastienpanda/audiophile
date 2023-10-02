@@ -1,7 +1,7 @@
-import { ProductThumbnail } from "./ProductThumbnail.jsx"
-import { useFetch } from "../../hooks/useFetch.js"
+import { Thumbnail } from "./Thumbnail.jsx"
+import { useFetch } from "../../../hooks/useFetch.js"
 
-export function ProductAll({ styleNav, styleUl, styleProduct }) {
+export function CategoryThumbnail({ styleNav, styleUl, styleProduct }) {
     const { data } = useFetch("http://localhost:1337/api/category-thumbnails?populate=*")
 
     return (
@@ -12,7 +12,7 @@ export function ProductAll({ styleNav, styleUl, styleProduct }) {
                 {data.map((product) => {
                     return (
                         <li key={product.id}>
-                            <ProductThumbnail product={product.attributes} link={`/${product.attributes.title}`} />
+                            <Thumbnail product={product.attributes} link={`/${product.attributes.title}`} />
                         </li>
                     )
                 })}

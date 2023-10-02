@@ -1,4 +1,4 @@
-import { Button } from "../../ui/Button.jsx"
+import { Button } from "../../../components/ui/Button.jsx"
 
 export function ProductItem({ data, id }) {
     return (

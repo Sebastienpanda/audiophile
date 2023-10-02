@@ -1,5 +1,5 @@
-import { transpose } from "../helpers/transpose.js"
-import { Button } from "../components/ui/Button.jsx"
+import { Button } from "../../../components/ui/Button.jsx"
+import { transpose } from "../../../helpers/transpose.js"
 
 export function AnotherProduct({ data }) {
     const media = [data.another_desktop, data.another_tablet, data.another_mobile]

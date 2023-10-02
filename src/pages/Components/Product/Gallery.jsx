@@ -1,4 +1,4 @@
-import { transpose } from "../helpers/transpose.js"
+import { transpose } from "../../../helpers/transpose.js"
 
 export function Gallery({ data }) {
     const media = [data.galery_desktop, data.galery_tablet, data.galery_mobile]

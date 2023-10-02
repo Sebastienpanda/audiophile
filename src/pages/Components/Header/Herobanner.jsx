@@ -1,7 +1,7 @@
 import casque from "@/assets/images/home/mobile/image-header.jpg"
 import casqueTablet from "@/assets/images/home/tablet/image-header.jpg"
 import casqueDesktop from "@/assets/images/home/desktop/image-hero.jpg"
-import { Button } from "./ui/Button.jsx"
+import { Button } from "../../../components/ui/Button.jsx"
 
 export function HeroBanner() {
     return (

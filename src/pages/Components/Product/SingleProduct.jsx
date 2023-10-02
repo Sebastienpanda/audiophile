@@ -1,5 +1,5 @@
-import { Gallery } from "../../Gallery.jsx"
-import { AnotherProduct } from "../../AnotherProduct.jsx"
+import { Gallery } from "./Gallery.jsx"
+import { AnotherProduct } from "./AnotherProduct.jsx"
 import { SingleItem } from "./SingleItem.jsx"
 import { Features } from "./Features.jsx"
 

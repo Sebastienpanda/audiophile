@@ -1,7 +1,7 @@
 import arrow from "@/assets/images/shared/desktop/icon-arrow-right.svg"
 import { Link } from "react-router-dom"
 
-export function ProductThumbnail({ product, style }) {
+export function Thumbnail({ product, style }) {
     return (
         <article className={`relative grid place-items-center rounded-lg bg-card ${style}`}>
             <div className="absolute -top-14">

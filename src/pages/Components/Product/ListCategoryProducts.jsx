@@ -1,5 +1,4 @@
 import { useFetch } from "../../../hooks/useFetch.js"
-import { Skeleton } from "../Skeleton.jsx"
 import { ProductItem } from "./ProductItem.jsx"
 
 export function ListCategoryProducts({ category }) {
@@ -7,7 +6,7 @@ export function ListCategoryProducts({ category }) {
     return (
         <section className="mt-16 lg:mt-40">
             <div className="space-y-[7.5rem] lg:space-y-40">
-                {loading && <Skeleton />}
+                {loading && <div>Chargement</div>}
                 {data &&
                     data
                         .filter((item) => item.attributes.category.data.attributes.category === category)
