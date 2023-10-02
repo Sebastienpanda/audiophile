@@ -1,14 +1,14 @@
 import { useParams } from "react-router-dom"
-import { useFetch } from "../../hooks/useFetch.js"
 import { SingleProduct } from "../Components/Product/SingleProduct.jsx"
 import { CategoryThumbnail } from "../Components/Product/CategoryThumbnail.jsx"
 import { Header } from "../Components/Header/Header.jsx"
 import { Footer } from "../Components/Footer/Footer.jsx"
 import { AudioGear } from "../Components/utils/AudioGear.jsx"
+import { useKy } from "../../hooks/useKy.js"
 
 export function Single() {
     const { id } = useParams()
-    const { data, loading } = useFetch(`http://localhost:1337/api/headphones/${id}?populate=*`)
+    const { data, loading } = useKy(`headphones/${id}?populate=*`)
     console.log(data)
 
     return (

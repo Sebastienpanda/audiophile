@@ -1,8 +1,8 @@
 import { Thumbnail } from "./Thumbnail.jsx"
-import { useFetch } from "../../../hooks/useFetch.js"
+import { useKy } from "../../../hooks/useKy.js"
 
 export function CategoryThumbnail({ styleNav, styleUl, styleProduct }) {
-    const { data } = useFetch("http://localhost:1337/api/category-thumbnails?populate=*")
+    const { data } = useKy("category-thumbnails?populate=*")
 
     return (
         <nav className={`${styleNav} ${styleProduct}`}>

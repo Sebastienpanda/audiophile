@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import { instance } from "../api/instanceKy.js"
 
-export function useFetch(url, options) {
+export function useKy(url, options) {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState([])
     const [errors, setError] = useState(null)
@@ -8,7 +9,7 @@ export function useFetch(url, options) {
     useEffect(() => {
         const abortController = new AbortController()
         const signal = abortController.signal
-        let fetchOptions = {
+        let kyOptions = {
             signal,
             headers: {
                 Accept: "application/json; charset=UTF-8",
@@ -16,28 +17,18 @@ export function useFetch(url, options) {
             },
         }
         if (options) {
-            fetchOptions = {
-                ...fetchOptions,
+            kyOptions = {
+                ...kyOptions,
                 ...options,
             }
         }
-        fetch(url, {
-            ...fetchOptions,
-        })
-            .then((response) => {
-                if (response.ok) {
-                    return response.json()
-                }
-            })
-            .then((data) => {
-                setData(data.data)
-            })
-            .catch((e) => {
-                setError(e)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
+        instance
+            .get(url, kyOptions)
+            .json()
+            .then((data) => setData(data.data))
+            .catch((e) => setError(e))
+            .finally(() => setLoading(false))
+
         return () => {
             abortController.abort()
         }
