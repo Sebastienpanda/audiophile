@@ -10,7 +10,7 @@ export function Earphones() {
         <>
             <Header style="bg-black" />
             <HeroBannerTitle title="headphones" />
-            <main className="mx-6 md:mx-10 lg:mx-20 1xl:mx-[10.313rem]">
+            <main className="mx-6 md:mx-10 1xl:mx-[10.313rem]">
                 <ListCategoryProducts category="earphones" />
                 <CategoryThumbnail styleProduct="mt-[10.75rem] md:mt-[10.75rem] lg:mt-60" />
                 <AudioGear styleProduct="md:mt-[7.5rem] lg:mt-40" />

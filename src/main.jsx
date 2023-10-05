@@ -7,7 +7,8 @@ import { Speakers } from "./pages/Speakers/Speakers.jsx"
 import { Earphones } from "./pages/Earphones/Earphone.jsx"
 import { NotFound } from "./pages/NotFound/NotFound.jsx"
 import { Single } from "./pages/Headphones/Single.jsx"
-
+import { Test } from "./pages/Test.jsx"
+import { UserContextProvider } from "./hooks/userContext.jsx"
 const router = createBrowserRouter([
     {
         path: "*",
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
         errorElement: <NotFound />,
     },
     {
-        path: "/headphones/:id",
+        path: "/headphones/:slug",
         element: <Single />,
         errorElement: <NotFound />,
     },
@@ -33,9 +34,25 @@ const router = createBrowserRouter([
         element: <Speakers />,
     },
     {
+        path: "/speakers/:slug",
+        element: <Single />,
+    },
+    {
         path: "/earphones",
         element: <Earphones />,
     },
+    {
+        path: "/earphones/:slug",
+        element: <Single />,
+    },
+    {
+        path: "/test",
+        element: <Test />,
+    },
 ])
 
-ReactDOM.createRoot(document.getElementById("root")).render(<RouterProvider router={router} />)
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <UserContextProvider>
+        <RouterProvider router={router} />
+    </UserContextProvider>
+)

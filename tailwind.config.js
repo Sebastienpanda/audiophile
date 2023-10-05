@@ -120,6 +120,13 @@ export default {
                         fontWeight: 400,
                     },
                 ],
+                "overline-shop": [
+                    "0.875rem",
+                    {
+                        lineHeight: "1.5625rem",
+                        fontWeight: 700,
+                    },
+                ],
                 subTitle: [
                     "0.813rem",
                     {

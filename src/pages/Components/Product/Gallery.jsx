@@ -1,7 +1,7 @@
 import { transpose } from "../../../helpers/transpose.js"
 
 export function Gallery({ data }) {
-    const media = [data.galery_desktop, data.galery_tablet, data.galery_mobile]
+    const media = [data.preview_desktop, data.preview_tablet, data.preview_mobile]
     const mediaFormatted = transpose(media.map((support) => support.data))
 
     return (
@@ -10,20 +10,20 @@ export function Gallery({ data }) {
                 <picture key={index} className="block overflow-hidden rounded-lg">
                     <source
                         media="(min-width: 1024px)"
-                        srcSet={`http://localhost:1337${media[0].attributes.url}`}
+                        srcSet={`${import.meta.env.VITE_BASE_ADMIN}${media[0].attributes.url}`}
                         type={media[0].attributes.mime}
                         width={media[0].attributes.width}
                         height={media[0].attributes.height}
                     />
                     <source
                         media="(min-width: 768px) and (max-width: 1024px)"
-                        srcSet={`http://localhost:1337${media[1].attributes.url}`}
+                        srcSet={`${import.meta.env.VITE_BASE_ADMIN}${media[1].attributes.url}`}
                         type={media[1].attributes.mime}
                         width={media[1].attributes.width}
                         height={media[1].attributes.height}
                     />
                     <img
-                        src={`http://localhost:1337${media[2].attributes.url}`}
+                        src={`${import.meta.env.VITE_BASE_ADMIN}${media[2].attributes.url}`}
                         alt={data.title}
                         width={media[2].attributes.width}
                         height={media[2].attributes.height}

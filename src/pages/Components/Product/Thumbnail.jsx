@@ -6,7 +6,7 @@ export function Thumbnail({ product, style }) {
         <article className={`relative grid place-items-center rounded-lg bg-card ${style}`}>
             <div className="absolute -top-14">
                 <img
-                    src={`http://localhost:1337${product.thumbnail.data.attributes.url}`}
+                    src={`${import.meta.env.VITE_BASE_ADMIN}${product.thumbnail.data.attributes.url}`}
                     alt={product.title}
                     width={product.thumbnail.data.attributes.width}
                     height={product.thumbnail.data.attributes.height}
@@ -18,7 +18,7 @@ export function Thumbnail({ product, style }) {
                 <h2 className="pt-[5.5rem] text-title-nav uppercase">{product.title}</h2>
                 <div className="flex flex-row items-center gap-[0.833rem]">
                     <span className="cursor-pointer text-shop uppercase text-black/50 transition-colors duration-[350ms] hover:text-primary">
-                        <Link to={`/${product.title}`}>shop</Link>
+                        <Link to={`/${product.slug}`}>shop</Link>
                     </span>
                     <div>
                         <img src={arrow} alt="Icon arrow" />

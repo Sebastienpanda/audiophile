@@ -25,7 +25,9 @@ export function useKy(url, options) {
         instance
             .get(url, kyOptions)
             .json()
-            .then((data) => setData(data.data))
+            .then((data) => {
+                setData(data.data)
+            })
             .catch((e) => setError(e))
             .finally(() => setLoading(false))
 

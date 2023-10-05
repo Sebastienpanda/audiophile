@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function InputNumber({ iconLeft, iconRight, value }) {
+export function InputNumber({ iconLeft, iconRight, value, style }) {
     const [number, setNumber] = useState(parseInt(value))
 
     const increment = (e) => {
@@ -17,7 +17,7 @@ export function InputNumber({ iconLeft, iconRight, value }) {
     }
 
     return (
-        <div className="flex h-full flex-row bg-card">
+        <div className={`flex flex-row bg-card ${style}`}>
             <button
                 className="w-10 cursor-pointer rounded-l text-shop text-black/25
                                      transition-colors duration-[350ms] ease-in-out hover:text-primary"

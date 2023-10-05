@@ -9,7 +9,7 @@ function App() {
     return (
         <>
             <Header />
-            <main className="mx-6 md:mx-10 lg:mx-20 1xl:mx-[10.313rem]">
+            <main className="mx-6 md:mx-10 1xl:mx-[10.313rem]">
                 <HeroBanner />
                 <CategoryThumbnail
                     styleNav="mt-[12.813rem] md:mt-[19.75rem] lg:mt-[22.375rem]"

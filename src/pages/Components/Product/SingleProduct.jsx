@@ -12,9 +12,9 @@ export function SingleProduct({ data }) {
                 <section>
                     <Gallery data={data} />
                 </section>
-                <section>
+                {/* <section>
                     <AnotherProduct data={data} />
-                </section>
+                </section> */}
             </section>
         </>
     )

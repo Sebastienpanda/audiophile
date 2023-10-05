@@ -4,19 +4,24 @@ import iconCart from "@/assets/images/shared/desktop/icon-cart.svg"
 import { Navigation } from "./Navigation.jsx"
 import { MenuMobile } from "./MenuMobile.jsx"
 import { Link } from "react-router-dom"
+import { Panier } from "../panier/Panier.jsx"
 
 export function Header({ style }) {
     const [active, setActive] = useState(false)
+    const [panierActive, setActivePanier] = useState(false)
 
     useEffect(() => {
-        if (active) {
+        if (active || panierActive) {
             document.querySelector("body").style.overflow = "hidden"
         } else {
             document.querySelector("body").style.overflow = ""
         }
-    }, [active])
+    }, [active, panierActive])
     function handclick() {
         setActive(!active)
+    }
+    function handlePanier() {
+        setActivePanier(!panierActive)
     }
     return (
         <header className={`relative ${style}`}>
@@ -32,11 +37,19 @@ export function Header({ style }) {
                     </Link>
                 </div>
                 <Navigation styleNav="hidden lg:block" styleUl="flex gap-[2.12rem]" />
-                <div className="flex w-full justify-end">
+                <div
+                    className={
+                        panierActive
+                            ? "panierActive flex w-full cursor-pointer justify-end"
+                            : "flex w-full cursor-pointer justify-end"
+                    }
+                    onClick={handlePanier}
+                >
                     <img src={iconCart} alt="Panier" />
                 </div>
             </div>
             {active ? <MenuMobile style="visible nav-active lg:hidden" /> : <MenuMobile style="invisible" />}
+            {panierActive ? <Panier style="nav-active" /> : ""}
         </header>
     )
 }
