@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function InputNumber({ iconLeft, iconRight, value, style }) {
+export function InputNumber({ iconLeft, iconRight, value, style, id }) {
     const [number, setNumber] = useState(parseInt(value))
 
     const increment = (e) => {
@@ -29,10 +29,10 @@ export function InputNumber({ iconLeft, iconRight, value, style }) {
             <input
                 type="number"
                 name="number"
-                id="number"
+                id={id}
                 value={number}
                 onChange={handleChange}
-                className="w-10 bg-card text-center text-shop outline-none"
+                className="form-input w-10 border-0 bg-card text-center text-shop outline-none"
                 readOnly
             />
             <button
