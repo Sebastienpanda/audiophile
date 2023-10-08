@@ -25,7 +25,7 @@ export function Header({ style }) {
     }
     return (
         <header className={`relative ${style}`}>
-            <div className="grid grid-cols-nav-center-mobile justify-items-center border-b-[1px] border-b-white/[0.104] px-6 py-8 md:mx-10 md:grid-cols-center-element-left md:justify-items-start md:px-0 lg:mx-20 lg:grid-cols-nav-center lg:justify-items-center lg:px-0 lg:py-[2.188rem] 1xl:mx-[10.313rem]">
+            <div className="container grid grid-cols-nav-center-mobile justify-items-center border-b-[1px] border-b-white/[0.104]   py-8 md:grid-cols-center-element-left md:justify-items-start lg:grid-cols-nav-center lg:justify-items-center lg:py-[2.188rem]">
                 <div className="flex w-full justify-start lg:hidden">
                     <button onClick={handclick} className={active ? "cross active" : "cross"}>
                         <span></span>

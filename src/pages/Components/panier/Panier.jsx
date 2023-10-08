@@ -43,7 +43,15 @@ export function Panier({ style }) {
                                     <span className="text-overline-shop text-black/50">$ {item.price}</span>
                                 </div>
                             </div>
-                            <InputNumber iconLeft="-" iconRight="+" value="0" width="6" height="2" style="w-24 h-8" />
+                            <InputNumber
+                                iconLeft="-"
+                                iconRight="+"
+                                value="0"
+                                width="6"
+                                height="2"
+                                style="w-24 h-8"
+                                id={`number-${index}`}
+                            />
                         </div>
                     ))}
                 </div>
@@ -51,7 +59,7 @@ export function Panier({ style }) {
                     <h1 className="text-title-shop uppercase text-black/50">total</h1>
                     <p className="text-h6 uppercase tracking-normal ">$ 5,396</p>
                 </div>
-                <Button variant="primary" content="checkout" style="w-full mt-6" />
+                <Button variant="primary" content="checkout" style="w-full mt-6" slug="/checkout" />
             </div>
         </section>
     )
