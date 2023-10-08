@@ -8,6 +8,7 @@ import { Earphones } from "./pages/Earphones/Earphone.jsx"
 import { NotFound } from "./pages/NotFound/NotFound.jsx"
 import { Single } from "./pages/Headphones/Single.jsx"
 import { Test } from "./pages/Test.jsx"
+import { Checkout } from "./pages/Payement/Checkout.jsx"
 import { UserContextProvider } from "./hooks/userContext.jsx"
 const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
     {
         path: "/test",
         element: <Test />,
+    },
+    {
+        path: "/checkout",
+        element: <Checkout />,
     },
 ])
 
