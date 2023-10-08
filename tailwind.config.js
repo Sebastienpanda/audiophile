@@ -1,8 +1,16 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: "1rem",
+                    md: "0",
+                },
+            },
             gridTemplateColumns: {
                 tablet: "repeat(3, 1fr)",
                 laptop: "repeat(3, 1fr)",
@@ -20,6 +28,7 @@ export default {
                 black: "#000000",
                 mobile: "#191919",
                 "hover-btn": "#4C4C4C",
+                form: "#CFCFCF",
             },
             screens: {
                 "1xl": "1440px",
@@ -142,8 +151,43 @@ export default {
                         fontWeight: 500,
                     },
                 ],
+                "label-form": [
+                    "0.75rem",
+                    {
+                        lineHeight: "normal",
+                        letterSpacing: "-0.01338rem",
+                        fontWeight: 700,
+                    },
+                ],
+                "placeholder-form": [
+                    "0.875rem",
+                    {
+                        lineHeight: "normal",
+                        letterSpacing: "-0.01563rem",
+                        fontWeight: 700,
+                    },
+                ],
+                "title-form": [
+                    "0.8125rem",
+                    {
+                        lineHeight: "1.5625rem",
+                        letterSpacing: "0.05806rem",
+                        fontWeight: 700,
+                    },
+                ],
+                "summary-total": [
+                    "1.125rem",
+                    {
+                        lineHeight: "normal",
+                        fontWeight: 700,
+                    },
+                ],
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require("@tailwindcss/forms")({
+            strategy: "class",
+        }),
+    ],
 }
