@@ -42,11 +42,11 @@ export function SingleItem({ data }) {
                         {data.new_product && <span className="text-overline uppercase text-primary">new product</span>}
                         <h1 className="text-h4 uppercase md:pt-[1.06rem] md:leading-8 lg:text-h2"> {data.title} </h1>
                         <p className="text-title-shop text-black/50 md:pt-8"> {data.content} </p>
-                        {/* <span className="text-h6 md:pt-8">$ {data.price}</span> */}
+                        <span className="text-h6 md:pt-8">$ {data.price}</span>
                     </div>
 
                     <form className="flex gap-4  pt-[1.94rem] lg:pt-[2.94rem]">
-                        <InputNumber iconLeft="-" iconRight="+" value="0" style="w-[7.5rem] h-12" />
+                        <InputNumber iconLeft="-" iconRight="+" value="0" style="w-[7.5rem] h-12" id="number" />
                         <Submit content="Add to cart" />
                     </form>
                 </section>
